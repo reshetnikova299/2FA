@@ -1,0 +1,7 @@
+{% extends "users.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block page_content %}
+<h1>Отсканируйте QR-код</h1>
+<p><img id="QR" src="{{ url_for('QR') }}"></p>
+<p>После сохранения кода в телефоне можете <a href="{{ url_for('login') }}">Войти</a> на сайт</p>
+{% endblock %}
